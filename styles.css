@@ -41,6 +41,10 @@ body::before {
     background-size: 48px 48px;
     pointer-events: none;
     z-index: 0;
+    
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+
 }
 
 /* ── SHARED ── */
@@ -73,6 +77,9 @@ nav {
     background: rgba(6,12,20,.85);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    will-change: transform;
 }
 .nav-inner {
     display: flex;
@@ -506,6 +513,8 @@ footer {
     border-bottom: 1px solid var(--border);
     z-index: 99;
     padding: 8px 0;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 .nav-drawer.open { display: flex; }
 .nav-drawer a {
