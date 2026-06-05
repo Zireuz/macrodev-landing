@@ -13,7 +13,10 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html {
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: auto;
+}
 
 body {
     background: var(--bg);
@@ -22,12 +25,15 @@ body {
     font-size: 16px;
     line-height: 1.6;
     overflow-x: hidden;
+    overscroll-behavior: none;
+    touch-action: pan-y;
 }
 
 /* ── GRID BACKGROUND ── */
 body::before {
     content: '';
     position: fixed;
+    will-change: transform; /* fuerza capa de composición propia */
     inset: 0;
     background-image:
         linear-gradient(rgba(0,212,255,.03) 1px, transparent 1px),
@@ -460,10 +466,11 @@ footer {
 /* ── ANIMATIONS ── */
 .fade-in {
     opacity: 0;
-    transform: translateY(24px);
-    transition: opacity .6s ease, transform .6s ease;
+    transform: translateY(20px);
+    transition: opacity .5s ease, transform .6s ease;
+    will-change: opacity, transform;
 }
-.fade-in.visible { opacity: 1; transform: none; }
+.fade-in.visible { opacity: 1; transform: translateZ(0); }
 
 /* ── HAMBURGER ── */
 .hamburger {
@@ -578,6 +585,7 @@ footer {
     }
     .oss-section .cta-group a { justify-content: center; }
 
+    
     /* Footer */
     .footer-inner {
         flex-direction: column;
