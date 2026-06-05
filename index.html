@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MacroDev — Control Local de Entornos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="nav-inner">
+        <div class="nav-logo">Macro<span>Dev</span></div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#como-funciona">Cómo funciona</a>
+            <a href="#instalacion">Instalación</a>
+            <a href="https://github.com/Zireuz/macroweb" class="btn-github">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-glow"></div>
+    <div class="container">
+        <div class="hero-badge">Open Source · v1.0</div>
+        <h1>Control <span class="acc">local</span><br>de entornos</h1>
+        <p class="hero-sub">
+            Gestiona todos tus proyectos <em>Node, React y Vite</em> desde
+            tu smartphone. Sin servidores externos, sin suscripciones.
+            Solo tu red local.
+        </p>
+        <div class="hero-ctas">
+            <a href="#instalacion" class="btn-primary">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                Descargar
+            </a>
+            <a href="https://github.com/Zireuz/macroweb" class="btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                Ver en GitHub
+            </a>
+        </div>
+
+        <div class="hero-visual fade-in">
+            <div class="terminal">
+                <div class="terminal-bar">
+                    <div class="dot dot-r"></div>
+                    <div class="dot dot-y"></div>
+                    <div class="dot dot-g"></div>
+                    <span class="terminal-title">MacroDev — servidor activo</span>
+                </div>
+                <div class="terminal-body">
+                    <div><span class="t-muted">$</span> <span class="t-cmd">node server.js</span></div>
+                    <div><span class="t-ok">✓</span> Servidor MacroDev corriendo en <span class="t-path">http://localhost:4000</span></div>
+                    <div><span class="t-ok">✓</span> Extensión VS Code detectada en <span class="t-path">:4001</span></div>
+                    <div><span class="t-ok">✓</span> Proyectos detectados: <span class="t-warn">4</span> entornos</div>
+                    <div><span class="t-muted">  → carrito-react · frontend · backend</span></div>
+                    <div><span class="t-muted">  → portfolio · frontend</span></div>
+                    <div><span class="t-muted">$</span> <span class="cursor"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat fade-in">
+                <span class="stat-n">0ms</span>
+                <span class="stat-l">latencia en red local</span>
+            </div>
+            <div class="stat fade-in">
+                <span class="stat-n">100%</span>
+                <span class="stat-l">offline — sin cloud</span>
+            </div>
+            <div class="stat fade-in">
+                <span class="stat-n">~268MB</span>
+                <span class="stat-l">tamaño del proyecto</span>
+            </div>
+            <div class="stat fade-in">
+                <span class="stat-n">MIT</span>
+                <span class="stat-l">licencia open source</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+    <div class="container">
+        <span class="section-tag">Funcionalidades</span>
+        <h2>Todo lo que necesitas<br>para tu flujo de trabajo</h2>
+        <p class="section-sub">Diseñado por y para desarrolladores que trabajan con múltiples proyectos simultáneamente.</p>
+
+        <div class="features-grid fade-in">
+            <div class="feature">
+                <div class="feat-icon">📱</div>
+                <h3>Control desde el móvil</h3>
+                <p>Lanza y detiene servidores desde tu smartphone sin tocarlo el teclado. Conexión directa por WiFi local.</p>
+            </div>
+            <div class="feature">
+                <div class="feat-icon">⚡</div>
+                <h3>Terminales integradas en VS Code</h3>
+                <p>Cada botón abre una terminal integrada directamente en VS Code, con la carpeta correcta y el comando listo.</p>
+            </div>
+            <div class="feature">
+                <div class="feat-icon">🔍</div>
+                <h3>Detección automática</h3>
+                <p>Escanea tu carpeta de proyectos y detecta todos los <code>package.json</code> con sus scripts disponibles.</p>
+            </div>
+            <div class="feature">
+                <div class="feat-icon">🚀</div>
+                <h3>Soporte para Ngrok</h3>
+                <p>Lanza túneles HTTP directamente desde el panel. Ideal para probar webhooks y demos en tiempo real.</p>
+            </div>
+            <div class="feature">
+                <div class="feat-icon">🖥️</div>
+                <h3>App de escritorio Electron</h3>
+                <p>Ventana nativa con icono en la bandeja del sistema. Arranca silenciosamente, vive en segundo plano.</p>
+            </div>
+            <div class="feature">
+                <div class="feat-icon">🔒</div>
+                <h3>100% local y privado</h3>
+                <p>Sin cuentas, sin telemetría, sin servicios externos. Todo corre en tu red y en tu máquina.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="como-funciona" style="background: linear-gradient(180deg, transparent, rgba(0,212,255,.02), transparent);">
+    <div class="container">
+        <span class="section-tag">Arquitectura</span>
+        <h2>Cómo funciona</h2>
+        <p class="section-sub">Tres capas simples que se comunican en tu red local.</p>
+
+        <div class="how-grid fade-in">
+            <div class="steps">
+                <div class="step-item">
+                    <div class="step-n">1</div>
+                    <div class="step-body">
+                        <h4>Servidor Express local</h4>
+                        <p>MacroDev levanta un servidor en el puerto <code>:4000</code> que expone la API y sirve el panel web. Corre silenciosamente en segundo plano gracias a Electron.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-n">2</div>
+                    <div class="step-body">
+                        <h4>Extensión de VS Code</h4>
+                        <p>Una extensión ligera escucha en el puerto <code>:4001</code> y traduce las órdenes del servidor en terminales integradas dentro de VS Code.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-n">3</div>
+                    <div class="step-body">
+                        <h4>Panel en el móvil</h4>
+                        <p>Escaneas el QR con tu teléfono y accedes al panel desde el navegador. Todo en la misma red WiFi, sin latencia perceptible.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-n">4</div>
+                    <div class="step-body">
+                        <h4>Detección de proyectos</h4>
+                        <p>Al iniciar, MacroDev escanea tu carpeta raíz buscando <code>package.json</code> en cada subdirectorio y genera los controles automáticamente.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arch-box">
+                <div><span class="gy">// Flujo de una orden desde el móvil</span></div>
+                <div>&nbsp;</div>
+                <div><span class="wh">Móvil</span> <span class="gy">(navegador)</span></div>
+                <div>&nbsp;&nbsp;<span class="gy">↓ POST /api/macro/start</span></div>
+                <div><span class="az">MacroDev</span> <span class="gy">(:4000)</span></div>
+                <div>&nbsp;&nbsp;<span class="gy">↓ POST /terminal/start</span></div>
+                <div><span class="vd">Extensión</span> <span class="gy">VS Code (:4001)</span></div>
+                <div>&nbsp;&nbsp;<span class="gy">↓ VS Code API</span></div>
+                <div><span class="wh">Terminal integrada</span></div>
+                <div>&nbsp;&nbsp;<span class="gy">→ npm run dev ✓</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- INSTALACION -->
+<section class="section" id="instalacion">
+    <div class="container">
+        <span class="section-tag">Instalación</span>
+        <h2>En marcha en 3 pasos</h2>
+        <p class="section-sub">Requisitos: Node.js v18+ y VS Code en Windows 10/11.</p>
+
+        <div class="install-box fade-in">
+            <div class="install-tab">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="m9 9 6 6M15 9l-6 6"/></svg>
+                <span>Terminal</span> — Windows PowerShell / CMD
+            </div>
+            <div class="install-steps">
+                <div class="install-step">
+                    <div class="install-step-n">1</div>
+                    <div class="install-step-body">
+                        <p>Clona o descarga el repositorio en tu carpeta de proyectos:</p>
+                        <div class="cmd-block">git clone https://github.com/Zireuz/macroweb.git PORTAFOLIO/macroweb</div>
+                    </div>
+                </div>
+                <div class="install-step">
+                    <div class="install-step-n">2</div>
+                    <div class="install-step-body">
+                        <p>Instala las dependencias (incluye Electron):</p>
+                        <div class="cmd-block">cd PORTAFOLIO/macroweb &amp;&amp; npm install</div>
+                    </div>
+                </div>
+                <div class="install-step">
+                    <div class="install-step-n">3</div>
+                    <div class="install-step-body">
+                        <p>Instala la extensión de VS Code:</p>
+                        <div class="cmd-block">code --install-extension macrodev-terminal-1.0.0.vsix</div>
+                        <p style="margin-top:10px;font-size:13px;color:var(--muted)">Reinicia VS Code. Luego haz doble clic en <code>iniciar.vbs</code> para arrancar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OPEN SOURCE -->
+<section class="oss-section">
+    <div class="oss-glow"></div>
+    <div class="container" style="position:relative;z-index:1">
+        <h2>Libre y <em>abierto</em></h2>
+        <p>MacroDev es open source. Úsalo, modifícalo, y compártelo con quien quieras.</p>
+        <div class="license-badge">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Licencia MIT
+        </div>
+        <br>
+        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+            <a href="https://github.com/Zireuz/macroweb" class="btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                Ver en GitHub
+            </a>
+            <a href="#instalacion" class="btn-secondary">Instrucciones de instalación</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-logo">Macro<span>Dev</span></div>
+            <div class="footer-copy">Construido con Node.js, Express, Electron y VS Code API · MIT License</div>
+            <a href="https://github.com/Zireuz/macroweb" style="color:var(--muted);font-size:13px">GitHub →</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+            setTimeout(() => e.target.classList.add('visible'), i * 80);
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
