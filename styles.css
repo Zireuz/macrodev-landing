@@ -6,7 +6,7 @@
     --accent2:  #0099cc;
     --green:    #00e599;
     --text:     #c8dde8;
-    --muted:    #a9ccde;
+    --muted:    #41698f;
     --mono:     'Space Mono', monospace;
     --sans:     'DM Sans', sans-serif;
 }
@@ -226,7 +226,7 @@ nav {
 .dot-g { background: #28c840; }
 .terminal-title { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-left: 8px; }
 .terminal-body { padding: 22px 24px; font-family: var(--mono); font-size: 13px; line-height: 2; }
-.t-muted { color: #1e4060; }
+.t-muted { color: #41698f; }
 .t-cmd   { color: var(--accent); }
 .t-ok    { color: var(--green); }
 .t-warn  { color: #f59e0b; }
