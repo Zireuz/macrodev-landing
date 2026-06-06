@@ -14,8 +14,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
-    overscroll-behavior: none;
-    -webkit-overflow-scrolling: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 body {
