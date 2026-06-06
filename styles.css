@@ -19,30 +19,18 @@ html {
 
 body {
     background: var(--bg);
-    color: var(--text);
-    font-family: var(--sans);
-    font-size: 16px;
-    line-height: 1.6;
-  
-}
-
-/* ── GRID BACKGROUND ── */
-body::before {
-    content: '';
-    position: fixed;
-    will-change: transform; /* fuerza capa de composición propia */
-    inset: 0;
     background-image:
         linear-gradient(rgba(0,212,255,.03) 1px, transparent 1px),
         linear-gradient(90deg, rgba(0,212,255,.03) 1px, transparent 1px);
     background-size: 48px 48px;
-    pointer-events: none;
-    z-index: 0;
-    
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-
+    background-attachment: fixed;
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
 }
+
+/* ── GRID BACKGROUND ── */
 
 /* ── SHARED ── */
 .container {
