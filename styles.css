@@ -26,7 +26,7 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     overscroll-behavior: none;
-    touch-action: pan-y;
+   
 }
 
 /* ── GRID BACKGROUND ── */
@@ -116,14 +116,16 @@ nav {
 .btn-github:hover { background: rgba(0,212,255,.14); border-color: rgba(0,212,255,.4); }
 
 /* ── HERO ── */
+.hero       { padding: 100px 0 56px;  }
 .hero {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 140px 0 80px;
+    min-height: auto;
     position: relative;
-    overflow: hidden;
+    
 }
 .hero-glow {
     position: absolute;
@@ -554,10 +556,10 @@ footer {
 
     /* Evitar overflow horizontal global */
     html, body  { max-width: 100vw; overflow-x: hidden; }
-    .oss-section, .stats, .section, footer { overflow: hidden; }
+ 
 
     /* Hero */
-    .hero       { padding: 100px 0 56px; min-height: auto; }
+    
     .hero-sub   { font-size: 15px; margin-bottom: 28px; }
     .hero-ctas  { flex-direction: column; }
     .hero-ctas a { width: 100%; justify-content: center; }
